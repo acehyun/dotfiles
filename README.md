@@ -10,3 +10,5 @@ chsh -s /usr/local/bin/zsh # Changing shell to zsh
 ```
 
 https://www.iterm2.com/
+
+# Installing Alfred, Sourcetree, 1password and Visual code
