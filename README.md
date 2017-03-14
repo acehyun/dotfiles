@@ -12,4 +12,4 @@ chsh -s /usr/local/bin/zsh # Changing shell to zsh
 https://www.iterm2.com/
 
 # Installing applications in each homepage
-Alfred, Sourcetree, 1password and Visual code
+Slack, Alfred, Sourcetree, 1password and Visual code
