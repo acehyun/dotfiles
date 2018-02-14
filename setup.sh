@@ -39,6 +39,9 @@ brew cask install dropbox
 echo "Installing alfred"
 brew cask install alfred
 
+echo "Installing 1Password"
+brew cask install 1password
+
 echo "Installing docker"
 brew cask install docker
 
