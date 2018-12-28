@@ -42,8 +42,8 @@ brew cask install alfred
 echo "Installing 1Password"
 brew cask install 1password
 
-echo "Installing docker"
-brew cask install docker
+echo "Installing Spectacle"
+brew cask install spectacle
 
 echo "Installing nvm"
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
