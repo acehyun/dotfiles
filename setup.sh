@@ -54,13 +54,13 @@ brew install yarn --without-node
 echo "Installing rvm, ruby, rails, bundler"
 curl -L https://get.rvm.io | bash -s stable —ruby --rails --autolibs=enable
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
-source $HOME/.rvm/scripts/rvm
-
 cat >> ~/.zshrc << E0F
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+
 export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
+
 export PATH="$HOME/.yarn/bin:$PATH" # For yarn
 E0F
 
