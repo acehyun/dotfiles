@@ -48,7 +48,6 @@ brew cask install spectacle
 echo "Installing nvm"
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
 
-export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
 echo "Installing Yarn"
@@ -59,3 +58,12 @@ curl -L https://get.rvm.io | bash -s stable —ruby --rails --autolibs=enable
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
 source $HOME/.rvm/scripts/rvm
+
+cat >> ~/.zshrc << E0F
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
+export PATH="$HOME/.yarn/bin:$PATH" # For yarn
+E0F
+
+source ~/.zshrc
