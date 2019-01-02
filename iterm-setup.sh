@@ -28,6 +28,9 @@ brew cask install spectacle
 echo "Installing nvm"
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
 
+echo "Installing node"
+nvm install stable
+
 echo "Installing Yarn"
 brew install yarn --without-node
 
