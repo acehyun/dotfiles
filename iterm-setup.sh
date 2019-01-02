@@ -1,25 +1,8 @@
-#!/bin/sh
-
-echo "Installing Xcode"
-xcode-select --install
-
-echo "Installing homebrew"
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-echo "Installing Zsh"
-brew install zsh
-
-echo "Installing Oh my zsh"
-curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
-
-echo "Setting to zsh"
-chsh -s /usr/local/bin/zsh
+echo "Installing 1Password"
+brew cask install 1password
 
 echo "Installing Git"
 brew install git
-
-echo "Installing Iterm2"
-brew cask install iterm2
 
 echo "Installing visual studio code"
 brew cask install visual-studio-code
@@ -38,9 +21,6 @@ brew cask install dropbox
 
 echo "Installing alfred"
 brew cask install alfred
-
-echo "Installing 1Password"
-brew cask install 1password
 
 echo "Installing Spectacle"
 brew cask install spectacle
