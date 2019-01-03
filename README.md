@@ -5,4 +5,4 @@
 2. Account setting for slack, mail, calendar, app store, itunes, 1password and sourcetree
 3. Install kakaotalk, bear for note from app store
 4. SSH setting for git via github
-5. Get repos on sourcetree
+5. Get repos on iterm
